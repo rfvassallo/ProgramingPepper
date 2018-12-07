@@ -1,0 +1,139 @@
+topic: ~5G_DCMS()
+language: enu
+include:lexicon_enu.top
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+
+concept:(5GUK) ["what is 5GUK {testbeds and trials}?" "what is UK5G {testbeds and trials}?" "Tell me {something} about UK5G {testbeds and trials} {please}" "Tell me {something} about 5GUK {testbeds and trials} {please}" "5GUK" "UK5G" "do you know what is 5GUK?" "what is five gee you k {testbeds and trials}?"]
+
+
+concept:(5GUK_programme)["{Can you tell me about the} 5GUKProgramme {please}" ]
+concept:(testbeds)["what are the testbeds {and trials}?" "which are the testbeds {and trials}?" "{Can you} Tell me {something} about the testbeds {and trials} {please}?" ] 
+concept:(5G) ["what is 5G?" "Tell me {something} about 5G" "do you know what is 5G?"]
+concept:(5Grelease) ["When is 5G going to be released?" "5G released"  "When is {it} going to be released?"]
+concept:(5Gfeatures) ["{What are the} 5G features?" "{What are the} features of 5G?" "Tell me {something} about 5G features?" "Tell me {something} about the features of 5G?"]
+
+
+concept:(what) ["what is" "what are" "tell me {something} about" "what about"]
+concept:(thanks) ["thank you {very much}" "thanks" "cheers"]
+
+concept:(smartTransport) ["{~what} {smart} transport"]
+concept:(smartRailways) ["{~what} {improvements on} railways" ]
+concept:(smartStadiums) ["{~what} {smart} Stadiums" ]
+concept:(urbanHelp) ["{~what} help {for people with sight loss}" "sight loss" "blind people"]
+concept:(distantSurgical) ["{~what} distant surgical {mentoring}"]
+concept:(smartFarms) ["{~what} {smart} farms" "{~what} {smart} farming"]
+concept:(collaborationUni) ["{~what} {collaboration with the} universities" "{~what} {collaboration with} unis" ]
+concept:(finish) ["finish {the program}" "end the program" "finish 5GUK" "end 5GUK" "that is enough. {thank you}" ]
+concept:(yes)["yes {please}" "sure" "ok" "why not" "yeah"]
+concept:(no)["no {thanks}" "nope" "not now {thank you}"]
+
+
+u:(e:onStart) $showImage=0 $startTouch=1
+
+u:(e:onTopic $onTopic==0)  $showImage=0 #$stopTouch=1 $startTouch=1
+u:(e:onTopic $onTopic==1)  ^gotoReactivate(5GUK_definition) #$stopTouch=1
+u:(e:onTopic $onTopic==3)  ^gotoReactivate(5G_questions) #$stopTouch=1
+u:(e:onTopic $onTopic==5)  ^gotoReactivate(before_5G) #$stopTouch=1
+u:(e:onTopic $onTopic==6)  ^gotoReactivate(5G_features) #$stopTouch=1
+u:(e:onTopic $onTopic==9)  ^gotoReactivate(testbeds_trials) #$stopTouch=1
+u:(e:onTopic $onTopic==10) ^gotoReactivate(autonomous_cars) #$stopTouch=1
+u:(e:onTopic $onTopic==11) ^gotoReactivate(smart_railways) #$stopTouch=1
+u:(e:onTopic $onTopic==12) ^gotoReactivate(smart_stadiums) #$stopTouch=1
+u:(e:onTopic $onTopic==13) ^gotoReactivate(urban_help) #$stopTouch=1
+u:(e:onTopic $onTopic==14) ^gotoReactivate(distant_surgical) #$stopTouch=1
+u:(e:onTopic $onTopic==15) ^gotoReactivate(smart_farms) #$stopTouch=1
+u:(e:onTopic $onTopic==16) ^gotoReactivate(collaboration_uni) #$stopTouch=1
+
+
+u:(~5GUK) ^gotoReactivate(5GUK_definition)
+
+proposal: %5GUK_definition $showImage=1 "\style=didactic\ The 5G Testbeds & Trials Programme is an initiative of the UK govern \pau=200\ to support the development of 5G projects \pau=200\ related to some great challenges, \pau=200\ such as health, social care, autonomous vehicles and security." \pau=300\ \style=neutral\   "Do you want to hear more about 5G Testbeds & Trials?"
+    u1:(~yes) ^gotoReactivate(Programme)
+    u1:(~no) Ok. $showImage=0
+
+u:(~5GUK_programme) ^gotoReactivate(Programme)
+    
+proposal: %Programme $showImage=8 \style=didactic\ This Programme is being managed by the UK Government Department for Digital, Culture, Media and Sport. \pau=200\ It will work with testbeds, besides public and private investors to promote the development of 5G trials. \pau=200\  \style=neutral\ If you want to know about the testbeds, you can touch or ask me about the topics shown by my tablet. ^gotoReactivate(testbeds_trials)
+
+
+u:(~testbeds) If you want to know about the testbeds, you can touch or ask me about the topics shown by my tablet. ^gotoReactivate(testbeds_trials)
+
+proposal: %testbeds_trials $showImage=9  #Feel free to choose an option!
+ #$startTouch=1 
+    
+
+u:(~5G) $showImage=2 "\style=didactic\  5G is a term used to describe the fifth generation of mobile communications technologies. Would you like to know more about 5G?" 
+    u1:(~yes) "Great. You can touch or ask me about one of the topics shown in my tablet." ^gotoReactivate(5G_questions)
+    u1:(~no) "No worries." $showImage=0
+    
+    
+proposal:%5G_questions $showImage=3
+ #$startTouch=1
+
+u:(~5Grelease)  ^gotoReactivate(before_5G) #$stopTouch=1
+
+proposal: %before_5G $showImage=4 
+\style=didactic\ 5G is not yet fully developed, with its release only due to be agreed in 2019. \pau=200\ 5G will extend previous generations of mobile networks and services. \pau=200\ $showImage=5 It will also enable flexible high capacity connectivity, combining multiple different technology advances. $showImage=3 \pau=1000\ #$startTouch=1
+#    u1:(~yes)  $stopTouch=1 ^gotoReactivate(5G_features) 
+#    u1:(~no) "Ok then." $showImage=0 
+
+
+u:(~5Gfeatures)  ^gotoReactivate(5G_features) #$stopTouch=1
+
+proposal: %5G_features $showImage=6 
+\style=didactic\ 5G is expected to deliver a ultrafast, low latency, and reliable mobile connectivity. \pau=200\ That will support large data requirements, and help developing technologies based on Internet of Things and edge computing $showImage = 7 \pau=200\ That in turn will allow new projects for smart buildings, smart cities, smart agriculture and health, as well as autonomous vehicles; augmented reality; advanced manufacturing and robotics. $showImage=3 \pau=1000\ #$startTouch=1
+#    u1:(~yes) ^gotoReactivate(before_5G)
+#    u1:(~no) "Ok then." $showImage=0
+
+
+u:(~smartTransport)  ^gotoReactivate(autonomous_cars) #$stopTouch=1
+
+proposal: %autonomous_cars  $showImage=10 
+\style=didactic\ The response times promised by 5G will support the requirements of connected and autonomous vehicles. \style=neutral\ ["Don't you think that will be awsome?" "Nice isn't it?"] \pau=1000\ #$showImage=9 #$startTouch=1
+
+u:(~smartRailways)  ^gotoReactivate(smart_railways) #$stopTouch=1
+
+proposal: %smart_railways  $showImage=11 
+\style=didactic\ 5G will deliver speed, connectivity and capacity, adding intelligence to the railway. \style=neutral\ This will have a significant and positive impact! \pau=1000\ #$showImage=9 #$startTouch=1
+
+u:(~smartStadiums)  ^gotoReactivate(smart_stadiums) #$stopTouch=1
+
+proposal: %smart_stadiums  $showImage=12 
+Users have lots to gain from 5G! And they will have much more fun and facilities on their day-to-day experiences!\pau=1000\ #$showImage=9 #$startTouch=1
+
+
+u:(~urbanHelp) ^gotoReactivate(urban_help) #$stopTouch=1 
+
+proposal: %urban_help  $showImage=13 
+\style=didactic\ There is a system being developed that will enable the user to receive information about their surroundings via a device
+attached to their jaw bone! \pau=200\ I really hope that works and benefits people with sight loss, helping improve the quality of their life. \style=neutral\ Isn't that great? \pau=1000\ #$showImage=9 #$startTouch=1
+
+u:(~distantSurgical)  ^gotoReactivate(distant_surgical) #$stopTouch=1
+
+proposal: %distant_surgical  $showImage=14 
+\style=didactic\ With 5G low latency specialist surgeons in the UK will be able to offer hands-on training and mentoring for surgeons from many different countries. \style=neutral\ That is impressive!!!  \pau=1000\ #$showImage=9 #$startTouch=1
+
+u:(~smartFarms) ^gotoReactivate(smart_farms) #$stopTouch=1 
+
+proposal: %smart_farms  $showImage=15 
+\style=didactic\ 5G connectivity and data processing will help increasing the efficiency of the whole supply chain. \pau=200\ That will also help  the agri-food sector develop advanced technologies to improve food quality, animal welfare and health, while reducing farms’ environmental impact.  \pau=1000\ #$showImage=9 #$startTouch=1
+
+u:(~collaborationUni)  ^gotoReactivate(collaboration_uni) #$stopTouch=1
+
+proposal: %collaboration_uni  $showImage=16 
+\style=didactic\ In this programme it's essential to collaborate with universities in order to build the 5G capabilities that will support multiple Testbeds across the UK. \pau=200\ \style=neutral\ The 5G Testbed and Trials Programme will re-enforce the UK’s leadership position. \pau=1000\ #$showImage=9 #$startTouch=1
+
+
+u:(~thanks) ^rand["you are welcome" "my pleasure" "no worries" "cheers"]
+
+u:(~finish) \style=neutral\ ok. That was very nice to talk about this with you. $stopTouch=1 $onStopped=1
+

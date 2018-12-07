@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.0" uuid="hpn_dialog_shake_hand-4b4692">
+ <names>
+  <name lang="en_US">hpn_dialog_shake_hand</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ar_SA</language>
+ </descriptionLanguages>
+ <contents>
+  <dialogContent typeVersion="1.0" topicName="shake_hand">
+   <topic language="en_US" path="shake_hand/shake_hand_enu.top"/>
+  </dialogContent>
+ </contents>
+</package>

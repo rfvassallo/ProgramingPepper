@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="hpn_5guk-8d835d" version="0.0.0">
+ <names>
+  <name lang="en_US">hpn_5GUK</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="en_US">Launch five gee you k</sentence>
+    <sentence lang="en_US">Tell me about five gee you k testbed and trials</sentence>
+    <sentence lang="en_US">What is five gee you k testbed and trials</sentence>
+    <sentence lang="en_US">What is five gee you k?</sentence>
+    <sentence lang="en_US">Tell me about five gee you k</sentence>
+    <sentence lang="en_US">5GUK Program</sentence>
+    <sentence lang="en_US">five gee you k program</sentence>
+   </triggerSentences>
+   <loadingResponses>
+    <sentence lang="en_US">Please wait a secong and I will load an application about that. Loading application....</sentence>
+   </loadingResponses>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

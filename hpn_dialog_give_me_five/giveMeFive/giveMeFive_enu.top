@@ -1,0 +1,20 @@
+topic: ~giveMeFive()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+concept:(give5) ["give me five" "high five" "high 5" "give me 5"]
+
+u:(~give5) ^rand["Oh, yes! Give me five" "ok, give me five" "sure!!"] ^gotoRandom(high_five) 
+#$onStopped=1
+
+proposal: %high_five ^start(animations/UpLArm)  ^wait(animations/UpLArm)  Good!
+proposal: %high_five ^start(animations/UpRArm)  ^wait(animations/UpRArm) Nice!
+

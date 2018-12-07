@@ -1,0 +1,21 @@
+topic: ~follow()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+
+#concept:(follow_me) ["{can you} follow me? {please}" "{please} follow me" ]
+
+#u:(~follow_me) "I can try" $onFollow=1
+
+u:(e:onStart) $onFollow=1
+u:(stop) "Ok" $onStopped=1
+
+

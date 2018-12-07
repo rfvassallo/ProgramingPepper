@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="hpn_dialog_give_me_five-99754c" version="0.0.0">
+ <names>
+  <name lang="en_US">hpn_dialog_give_me_five</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <dialogContent topicName="giveMeFive" typeVersion="1.0">
+   <topic path="giveMeFive/giveMeFive_enu.top" language="en_US"/>
+  </dialogContent>
+ </contents>
+</package>

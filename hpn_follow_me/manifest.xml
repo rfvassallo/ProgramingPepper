@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.0" uuid="hpn_follow_me-c42399">
+ <names>
+  <name lang="en_US">hpn_follow_me</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="en_US">follow me</sentence>
+    <sentence lang="en_US">please follow me</sentence>
+    <sentence lang="en_US">follow me please</sentence>
+    <sentence lang="en_US">can you follow me please?</sentence>
+    <sentence lang="en_US">can you follow me?</sentence>
+   </triggerSentences>
+   <loadingResponses>
+    <sentence lang="en_US">OK. I'll be right behind you</sentence>
+    <sentence lang="en_US">Sure. I can try</sentence>
+   </loadingResponses>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

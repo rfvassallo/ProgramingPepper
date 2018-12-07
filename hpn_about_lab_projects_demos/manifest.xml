@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="hpn_about_lab_projects_demos-d147e1" version="0.0.0">
+ <names>
+  <name lang="en_US">hpn_about_lab_projects</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_2">
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="en_US">about five gee </sentence>
+    <sentence lang="en_US">let's talk about Smart internet lab</sentence>
+    <sentence lang="en_US">about Smart internet lab</sentence>
+    <sentence lang="en_US">let's talk about five gee</sentence>
+    <sentence lang="en_US">tell me about five gee</sentence>
+    <sentence lang="en_US">tell me about smart internet lab</sentence>
+   </triggerSentences>
+   <loadingResponses>
+    <sentence lang="en_US">OK. </sentence>
+    <sentence lang="en_US">sure</sentence>
+    <sentence lang="en_US">of course</sentence>
+   </loadingResponses>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

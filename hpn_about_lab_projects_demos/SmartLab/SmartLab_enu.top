@@ -1,0 +1,324 @@
+topic: ~SmartLab()
+language: enu
+include:lexicon_enu.top
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+# Defining needed concepts, keywords or sentences corresponding to a concept.
+#concept:(how) ["how are you" howdy "what's up" "how do you feel"]
+#concept:(happy) ["i am ok" fine great happy blessed "all right" glad "not bad"]
+#concept:(sad) [sad miserable bad unhappy tired]
+concept:(hello) ["hello {Ada}" "hi {Ada}" "hey {Ada}" "good morning {Ada}" ]
+concept:(compliment) ["You are {very} nice" "You are {very} smart" "You are {very} cool" "You are {very} sweet" "You are {very} kind" "You are {very} clever" "You're {very} nice" "You're {very} smart" "You're {very} cool" "You're {very} sweet" "You're {very} kind" "You're {very} clever"]
+concept:(yes) [yes "all right" sure "why not" ok certainly "very well" yep yea definitely amen]
+concept:(no) [no nope "don't want" "no way" never "not at all"]
+concept:(repeat) ["could you repeat ?" "can you repeat ?"]
+concept:(thx) ["thank you" thanks  "thank you very much" "cheers"]
+concept:(bye) [goodbye "bye bye" "see you" "so long" "have a nice day"]
+concept:(finish) ["finish {the program}" "end the program" "{thanks} that is enough {thank you}" "{ok} Let's talk about other things." "finish {the application}" "stop {the application}"]
+concept:(what) ["do you know what is" "do you know what are" "tell me {something} about" "what about" "what do you know about" "what is" "what are" "do you know {anything} about"]
+concept:(know) ["do you know"]
+concept:(who) ["who is" "who are" "do you know who is" "do know who are"]
+concept:(boy_girl) ["are you a boy or a girl?" "are you a boy" "are you a girl"]
+
+concept:(close_tablet) ["{please} close {the} tablet {please}"]
+
+# Question 1: What is 5G?
+concept:(5G) ["{~what} 5G?" "{~what} five gee"]
+
+#Question 2: Differences among Gs / 5G features
+concept:(differenceGs) ["what is the difference among 4G and 5G?" "{~what} 5G features?" "{~what} features of 5G?" "what is the difference among Gs?" "what is the difference between 4G and 5G?" "what is the difference between Gs?"]
+
+#Question 3: What is 5GUK Test Network?
+concept:(5GUK_test_network) ["{~what} five gee you K {Test} Network?" "{~what} {five gee you K} Test Network?"]
+
+#Question 4: What is 5G Testbeds and Trials Programme?
+concept:(5G_testbeds_trials) ["{~what} {five gee} Testbeds and Trials" "{~what} five gee you k {testbeds and trials}"]
+
+#Question 5: What is DCMS?
+concept:(DCMS) ["{~what} DCMS" "{~what} Dee Cee eMe S" ]
+
+#Question 6: What is the Layered Realities Weekend?/focus on world's first
+concept:(layered_realities_weekend) ["{~what} {the} Layered Realities Weekend" ]
+
+#Question 7: What is Smart Internet Lab?
+concept:(smart_lab) ["where do you work?" "do you know {the} Smart Internet Lab?" "tell me about {the} smart internet lab {please}" "{~what} smart internet lab"]
+
+##Question 8: What 5G projects does the university currently work on?
+#concept:(uni_5Gtestbeds) ["{~what} {the} five gee projects the university is {currently} working on" "what five gee projects does the university {currently} work on" "{~what} {the} five gee projects the university has" "{~what} {the} five gee projects going on at the university" "{~what} the five gee projects at the university"]
+
+#Question 9: What are 5G demonstrations examples?
+concept:(uni_5Gdemos) ["{~what} {the} five gee demonstrations {["at the university" "at Bristol"]} " "{~what} {the} five gee demos {["at the university" "at Bristol"]}" "what five gee demonstrations does the university {currently} work on" "what five gee demos does the university {currently} work on" "{~what} {the} five gee demonstrations the university has" "{~what} {the} five gee demos the university has" "{~what} {the} five gee demonstrations going on {["at the university" "at Bristol"]}" "{~what} {the} five gee demos going on {["at the university" "at Bristol"]}" "{~what} {the} smart internet lab {five gee} demonstrations" "{~what} {the} smart internet lab {five gee} demos" "{~what} {the} demonstrations {["at the university" "at Bristol"]}" "{~what} {the} demos {["at the university" "at Bristol"]}"]
+
+#Question 10: What is Watershed?
+concept:(watershed) ["{~what} watershed" "{~know} watershed"]
+
+#Question 11: What is WECA?
+concept:(WECA) ["{~what} WECA" "{~what} West of England Combined Authority"]
+
+#Question 12: What is We the curious?
+concept:(we_curious) ["{~what} We the Curious" "{~know} We the Curious"]
+
+#Question 13: Who is Dimitra?
+concept:(dimitra) ["{~who} {Professor} Dimitra" "{~know} {Professor} Dimitra"]
+
+#Question 14: Who is Margot?
+concept:(margot) ["{~who} Margot James" "{~know} Margot James"]
+
+#Question 15: What is the best hub for digital Innovation in the UK?
+concept:(digital_innovation) ["{~what} {where is} the best {[place hub center]} for digital Innovation {in the UK}?" "{~know} the best {[place hub center]} for digital Innovation {in the UK}?"]
+
+#Question 16: Who is Tim Bowles?
+concept:(tim) ["{~who} Tim Bowles" "{~know} Tim Bowles"]
+
+#Question 17: What is the ‘5G Smart Tourism’ project?
+concept:(smart_tourism) ["{~what} {5G} Smart Tourism {project}" "{~know} {5G} Smart Tourism {project}"]
+
+#Question 18: What is 5GUK Exchange ?
+concept:(5GUK_exchange) ["{~what} five gee you k Exchange "]
+
+#Question 19: What is Smart City Safety?
+concept:(smart_city_safety) ["{~what} Smart City Safety"]
+
+#Question 20: What is Massive MIMO?
+concept:(massive_mimo) ["{~what} Massive My MO"]
+
+#Question 21: What is 5G in a Box?
+concept:(5G_box) ["{~what} {five gee} in a Box"]
+
+#Question 22: What is Visualisation of RF Spectral Waves?
+concept:(RF_spectral_waves) ["{~what} Visualisation of RF Spectral Waves"]
+
+#Question 23: What is Connected and Autonomous Vehicles?
+concept:(autonomous_vehicles) ["{~what} Connected and Autonomous Vehicles" "{~what} CAV"]
+
+#Question 24: What is the best place to learn about 5G?
+concept:(best_place_learn) ["{~what} {the} best place to learn {about} 5G?" "where is {the} best place to learn {about} 5G?" "where is {the} best place to study five gee?"]
+
+#Question 25: What is the leading university on researches about 5G?
+concept:(leading_university) ["{~what} {the} leading university on {researches} {about} 5G?" "which is {the} leading university on {researches} {about} 5G?"]
+
+#Question 26: What are the economic benefits of 5G?
+concept:(economic_benefits) ["{~what} {the} economic benefits of five gee?" "{~what} {the} benefits for the economy {we can {[have get]} with} five gee?"]
+
+
+
+
+u:(e:onStart) Loading the application.... $showImage=1
+u:(~5G) ^gotoReactivate(5G_text)
+u:(~differenceGs) ^gotoReactivate(differenceGs_text)
+u:(~5GUK_test_network) ^gotoReactivate(5GUK_test_network_text)
+u:(~5G_testbeds_trials) ^gotoReactivate(5G_testbeds_trials_text)
+u:(~DCMS) ^gotoReactivate(DCMS_text)
+u:(~layered_realities_weekend) ^gotoReactivate(layered_realities_weekend_text)
+u:(~smart_lab) ^gotoReactivate(smart_lab_text)
+#u:(~uni_5Gtestbeds) ^gotoReactivate(uni_5Gtestbeds_text)
+u:(~uni_5Gdemos) ^gotoReactivate(uni_5Gdemos_text)
+u:(~watershed) ^gotoReactivate(watershed_text)
+u:(~WECA) ^gotoReactivate(WECA_text)
+u:(~we_curious) ^gotoReactivate(we_curious_text)
+u:(~dimitra) ^gotoReactivate(dimitra_text)
+u:(~margot) ^gotoReactivate(margot_text)
+u:(~digital_innovation) ^gotoReactivate(digital_innovation_text)
+u:(~tim) ^gotoReactivate(tim_text)
+u:(~smart_tourism) ^gotoReactivate(smart_tourism_text) 
+u:(~5GUK_exchange) ^gotoReactivate(5GUK_exchange_text) 
+u:(~smart_city_safety) ^gotoReactivate(smart_city_safety_text) 
+u:(~massive_mimo) ^gotoReactivate(massive_mimo_text) 
+u:(~5G_box) ^gotoReactivate(5G_box_text)
+u:(~RF_spectral_waves) ^gotoReactivate(RF_spectral_waves_text)
+u:(~autonomous_vehicles) ^gotoReactivate(autonomous_vehicles_text)                   
+u:(~best_place_learn) ^gotoReactivate(best_place_learn_text)                   
+u:(~leading_university) ^gotoReactivate(best_place_learn_text)  
+u:(~economic_benefits) ^gotoReactivate(economic_benefits_text)                 
+
+#u:(e:onTopic $onTopic==0)  $showImage=0 #$stopTouch=1 $startTouch=1
+#u:(e:onTopic $onTopic==22)  ^gotoReactivate(uni_5Gdemos_text) 
+u:(e:onTopic $onTopic==23)  ^gotoReactivate(5GUK_exchange_text) 
+u:(e:onTopic $onTopic==24)  ^gotoReactivate(smart_city_safety_text)
+u:(e:onTopic $onTopic==25)  ^gotoReactivate(massive_mimo_text) 
+u:(e:onTopic $onTopic==26)  ^gotoReactivate(5G_box_text) 
+u:(e:onTopic $onTopic==27) ^gotoReactivate(RF_spectral_waves_text) 
+u:(e:onTopic $onTopic==28) ^gotoReactivate(autonomous_vehicles_text) 
+ 
+ 
+ 
+  
+        
+proposal: %5G_text
+$showImage=2 5G is the fifth generation of mobile communications technologies. \pau=200\ It has the potential to bring more reliable, ultrafast mobile connectivity, with quicker reaction times and larger data capabilities. \pau=200\ $showImage=1
+
+#It will extend previous generations of mobile networks and services \pau=200\ $showImage=5 and also enable flexible high capacity connectivity, combining many different technologies. 
+
+
+
+proposal: %differenceGs_text
+$showImage=3 5G will be as much as one thousand times faster than 4G with speeds of up to 100 gigabits per second. \pau=200\ $showImage=4 With 5G, users should be able to download a high-definition film in under a second, a task that could take 10 minutes on 4G. \pau=200\ $showImage=1 # LTE.  
+
+
+#5G is expected to deliver a ultrafast, low latency, and reliable mobile connectivity. \pau=200\ That will support large data requirements, and help developing technologies based on Internet of Things and edge computing $showImage = 7 
+
+proposal: %5GUK_test_network_text
+$showImage=5 The five gee UK test Network is a cutting-edge, large scale network, that delivered the world’s first end-to-end trial in March 2018. \pau=200\ It links together University of Bristol’s Smart Internet Lab, the University of Surrey’s 5GIC  and King's College London. \pau=200\ $showImage=1
+
+
+proposal: %5G_testbeds_trials_text
+$showImage=20 It’s a pioneering research programme, funded by the UK Governments’ Department of Culture Media and Sport. \pau=200\ It represents an effort to harness the potential of 5G, spark innovation, create new jobs and boost the UK economy. \pau=200\ The idea is to work with testbeds, besides public and private investors to promote the development of 5G trials. \pau=200\ $showImage=1
+
+
+#The 5G Testbeds and Trials Programme is an initiative of the UK govern  to support the development of 5G projects. \pau=200\ It is being managed by the Department for Digital, Culture, Media and Sport. \pau=200\ and will work with testbeds, besides public and private investors to promote the development of 5G trials.
+
+
+proposal: %DCMS_text
+$showImage=6 Well, DCMS is the UK Government Department of Digital, Culture, Media and Sport.    \pau=200\ $showImage=1
+
+    
+proposal: %layered_realities_weekend_text
+$showImage=7 It was a very cool weekend in Bristol!!! \pau=200\ The Layered Realities Weekend was the world’s first 5G Urban Showcase, \pau=200\ $showImage=8 a public demonstration that was delivered by the University of Bristol, as part of the five gee UK Testbeds and Trials Programme. \pau=300\ It ran over the 17th and 18th of March 2018 \pau=200\ $showImage=9 and was created by the Smart Internet Lab at Bristol University, produced by Watershed and hosted by We The Curious in Bristol’s Millennium Square. \pau=200\ $showImage=1
+
+
+
+proposal: %smart_lab_text $showImage=0 "I am part of the Smart Internet Lab. It is a great research center in Bristol University. \pau=200\ and an important hub for internet research, which addresses grand societal and industrial challenges. \pau=200\ Do you want to hear more information about it?"  
+    u1:(~yes) "Ok"  ^gotoReactivate(uni_5Gdemos_text)
+    u1:(~no) "No worries." $showImage=1
+
+
+
+#proposal: %smart_lab_info 
+#$showImage=1 The Smart Internet Lab brings together more than 200 experts across the boundaries of communications and digital living research. \pau=300\ $showImage=2    We build on strategic and applied research on key communications and digital technologies \pau=100\  to create solutions and solve critical problems in the Internet evolution.  \pau=300\ $showImage=3 We challenge the complexity of tomorrow’s world by fusing research expertise and innovation in a range of areas such as , IoT, 5G, Smart Cities, Mobile and Edge Computing, Digital Health, Data Centers and Autonomous Vehicles. Do you want to hear about our 5G projects? 
+#    u1:(~yes) "Ok"  ^gotoReactivate(smart_lab_projects)
+#    u1:(~no) "As you wish."
+
+
+#proposal: %smart_lab_projects 
+#$showImage=0 Our main projects in the lab are: \pau=300\  Project 01 that makes this and that; $showImage=3 \pau=300\ Project 02 which is about communications and digital technologies $showImage=2 \pau=200\ and Project 03 that address topic such as Smart Cities, Mobile and Edge Computing, Digital Health, Data Centers and Autonomous Vehicles. If you want to listen to more details about each project you can choose one of them on my tablet or \pau=300\ click to hear about our demonstrations examples 
+#    u1:(~no) "As you wish."
+#    u1:(~yes) Please choose one option.
+    
+
+#proposal: %uni_5Gtestbeds_text
+#I still don't know what to say about this    
+
+    
+proposal: %uni_5Gdemos_text
+$showImage=22 $startTouch=1
+We have great demonstrations going on the Smart Internet Lab. \pau=200\ You can choose one to ask me about.
+
+
+proposal: %5GUK_exchange_text
+$showImage=23 $stopTouch=1
+The five gee UK Exchange is currently developing an Intelligent 5G Platform for end-to-end Smart Services. \pau=200\ $showImage=22 $startTouch=1
+
+proposal: %smart_city_safety_text
+$showImage=24 $stopTouch=1
+In this demo we use intelligent technologies for improving citizen safety in Smart Cities, based on an end-to-end 5G network. \pau=200\ Cyclists wore 360-degree cameras streaming in real-time images to a Mobile Edge Computing terminal \pau=100\ that detects suspious activities or criminals. \pau=200\ $showImage=22 $startTouch=1
+
+proposal: %massive_mimo_text
+$showImage=25 $stopTouch=1
+In this case the aim is to demonstrate more efficient sharing of wireless channels that will greatly boost network capacity and performance whilst reducing network congestion.  \pau=200\ $showImage=22 $startTouch=1
+
+proposal: %5G_box_text
+$showImage=26 $stopTouch=1
+This demo addresses smart connectivity for 5G. \pau=200\ 5G in a Box can be seen as an intelligent box for convergence of all network technologies and connected devices. \pau=200\ $showImage=22 $startTouch=1
+
+proposal: %RF_spectral_waves_text
+$showImage=27  $stopTouch=1
+With this demo we show how handsets connect to the 5G network \pau=100\ and how radio waves interact with the city, utilizing ultra-high-resolution 3D city maps. \pau=200\ $showImage=22 $startTouch=1
+
+proposal: %autonomous_vehicles_text
+$showImage=28 $stopTouch=1
+This demo tries to show how future autonomous vehicles will rely on cyber-physical infrastructure \pau=100\ to provide security and orchestrate the traffic. \pau=200\ $showImage=22 $startTouch=1
+ 
+proposal: %watershed_text
+$showImage=14 Watershed is an internationally renowned multi-arts venue, independent cinema and digital creativity centre. \pau=200\ It is located in Bristol City centre in the UK.   \pau=200\ $showImage=1
+    
+
+proposal: %WECA_text
+$showImage=15 WECA is The West of England Combined Authority. \pau=200\ It is made up of three of the local authorities in the region – Bath and North East Somerset, \pau=100\ Bristol and \pau=100\ South Gloucestershire. \pau=200\ $showImage=1
+
+
+proposal: %we_curious_text
+$showImage=16 We The Curious is an interactive Science Centre and charity, located in Bristol City in the UK. \pau=200\ I love it! It is so much fun to test experiences there! \pau=200\ $showImage=1
+
+proposal: %dimitra_text
+$showImage=17 Professor Dimitra Simeonidou is the Director of the Smart Internet Lab at the University of Bristol. \pau=200\ Her research is focused on the fields of high performance networks, Data Centre Networking, Software Defined Transport Networking and Smart Cities. She is a great researcher, entrepreneur and leader! \pau=200\ $showImage=1
+
+
+proposal: %margot_text
+$showImage=18 Margot James is the Minister of State for the UK Government’s Department for Digital, Culture, Media and Sport. \pau=200\ $showImage=1
+
+proposal: %digital_innovation_text
+$showImage=0 Don't you know? Bristol of course! Join the Smart Internet Lab at Bristol University and make it happen! \pau=200\ $showImage=1
+    
+
+proposal: %tim_text
+$showImage=19 Tim Bowles is the West of England Mayor. \pau=200\ He was elected in May 2017 and together with the Combined Authority have been given powers over spending on the region’s transport, housing, adult education and skills.  \pau=200\ $showImage=1
+# previously held by central government,        
+    
+
+proposal: %smart_tourism_text     
+$showImage=21
+It is a five million pound project, led by the WECA \pau=200\ that aims to create a testbed for delivering enhanced visual experiences for tourists using Augmented and Virtual Reality in Bath and Bristol, \pau=200\ like the Roman Baths and the Millennium Square. \pau=200\ BBC and Aardman will provide content and technological developments with support from the University of Bristol’s Smart Internet Lab. \pau=200\ $showImage=1
+
+
+#It will demonstrate self-provision of 5G and Wi-Fi and innovative mmWave backhaul, and will also address safety issues by providing emergency service capacity through network splicing.    
+
+# This is one of the six projects funded by the UK government’s 25million competition to pave the way for a future rollout of 5G technology in the UK.    
+
+proposal: %best_place_learn_text
+$showImage=1 Guess what!!! Bristol University of course! Come and visit the Smart Internet Lab to know what are the cutting-edge technologies on 5G! \pau=200\ $showImage=1
+
+proposal: %economic_benefits_text
+$showImage=29 Low latency and large bandwidth can create continuous connectivity \pau=200\ and that can widen our social landscape.\pau=200\ To name just a few advantages \pau=100\ we can expect to achieve greater productivity in industry, virtual healthcare assistance, autonomous transport and smart cities services by having 5G! \pau=200\ It can also increase international investment and keep the UK at the leading edge of technology. \pau=200\ The sky is the limit with 5G! \pau=300\ $showImage=1
+        
+        
+                
+
+# On any proposal if user asks to repeat, say again the same proposal.
+u:(~repeat) ^rand[Sure "of course" ok] I'll repeat for you. ^sameProposal
+
+# Being polite, the robot always answers accordingly to thankfull sentences.
+u:(~thx) "You're welcome"
+
+
+# Exiting.
+# Answering to Goodbye and exiting the dialog box, stimulating the onStopped output slot.
+#u:(~bye) ~bye $onStopped=1
+u:(~finish) ok. it was very nice to talk to you about this. $onStopped=1
+
+
+u:(~boy_girl) Well, at the end, I am just a robot.
+u:("why is your name Ada?") I was named after Ada Lovelace, the first person to make an algorithm.
+
+u:({~what} your name) My name is $Dialog/MyRobotName
+u:(who are you?) My name is $Dialog/MyRobotName
+u:(nice to meet you) Nice to meet you too!
+u:(how are you) I am fine. And you? How are you?
+
+u:(what 5G has to do with you?) Well, I am not working on 5G yet, but I hope I will be using 5G as soon as possible!
+u:(~hello) ^rand[Hello hi]
+
+u:(~compliment) Thank you very much. You are very kind.
+u:(~bye) ~bye
+
+concept:(give5) ["give me five" "high five" "high 5" "give me 5"]
+u:(~give5) ^rand["Oh, yes! Give me five" "ok, give me five" "sure!!"] ^gotoRandom(high_five) 
+proposal: %high_five ^start(animations/UpLArm)  ^wait(animations/UpLArm)  Good!
+proposal: %high_five ^start(animations/UpRArm)  ^wait(animations/UpRArm) Nice!
+
+concept:(shake_hand) ["Shake my hand" "can you please shake my hand" "{can you} shake hands {please}?" "{can you} shake my hand {please}?" "Let's shake hands {please}"]
+u:(~shake_hand) I can't really shake hands. ^gotoRandom(move_hand)    
+proposal: %move_hand ^start(animations/OpenRHand)  "But come on, touch my right hand" ^wait(animations/OpenRHand) 
+proposal: %move_hand ^start(animations/OpenLHand)  "But come on, touch my left hand" ^wait(animations/OpenLHand) 
+
+# Responding to events.
+# Here, if the left foot bumper is pressed, the robot starts an animation,
+# say a text and waits for the end of the animation.
+u:(e:LeftBumperPressed) ^start(animations/Stand/Gestures/YouKnowWhat_1) My left foot bumped into something! ^wait(animations/Stand/Gestures/YouKnowWhat_1)

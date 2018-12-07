@@ -1,0 +1,21 @@
+topic: ~shake_hand()
+language: enu
+
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+
+concept:(shake_hand) ["Shake my hand" "can you please shake my hand" "{can you} shake hands {please}?" "{can you} shake my hand {please}?" "Let's shake hands {please}"]
+
+
+u:(~shake_hand) I can't really shake hands. ^gotoRandom(move_hand)    #$onStopped=1
+
+proposal: %move_hand ^start(animations/OpenRHand)  "But come on, touch my right hand" ^wait(animations/OpenRHand) 
+proposal: %move_hand ^start(animations/OpenLHand)  "But come on, touch my left hand" ^wait(animations/OpenLHand) 
